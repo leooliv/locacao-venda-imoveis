@@ -7,6 +7,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = <Routes>[
   { path: '', component: RealEstateListComponent },
+  { path: '**', redirectTo: '' },
 ];
 
 @NgModule({

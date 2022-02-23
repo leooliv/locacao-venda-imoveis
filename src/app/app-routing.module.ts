@@ -10,6 +10,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'cep-finder',
+    loadChildren: () =>
+      import('./pages/cep-finder/cep-finder.module').then(
+        (m) => m.CepFinderModule
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'list',
   },

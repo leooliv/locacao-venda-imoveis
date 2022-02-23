@@ -1,0 +1,7 @@
+<form (submit)="onSubmit()">
+    <input name="cep" placeholder="Busque seu CEP" [(ngModel)]="cepValue">
+    <button type="submit" class="btn btn-primary" [disabled]="!cepValue">Buscar</button>
+</form>
+<div>
+    {{ cepResponse?.bairro }} {{ cepResponse?.logradouro}}
+</div>
