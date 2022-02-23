@@ -1,1 +1,5 @@
-<p>real-estate-list works!</p>
+<div class="content-container">
+  <div *ngFor="let imovel of realEstateList$ | async">
+    {{ imovel.nome }}
+  </div>
+</div>
