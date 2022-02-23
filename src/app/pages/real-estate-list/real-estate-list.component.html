@@ -1,5 +1,32 @@
 <div class="content-container">
-  <div *ngFor="let imovel of realEstateList$ | async">
-    {{ imovel.nome }}
-  </div>
+  <div *ngFor="let imovel of realEstateList$ | async" class="real-estate">
+    <div class="img">
+      <img src="https://i.imgur.com/6jZqCaV.jpeg">
+    </div>
+    <div class="content">
+      <p>
+        {{ imovel.nome }}
+      </p>
+      <h6>
+        R$ {{ imovel.valor }},00
+      </h6>
+      <div>
+        <p>
+          {{ imovel.area }} m²
+        </p>
+        <p class="bordered">
+          {{ imovel.quartos }} Quartos
+        </p>
+        <p class="bordered">
+          {{ imovel.banheiros }} Banheiros
+        </p>
+      </div>
+        <p>
+          {{ imovel.endereco.rua }}, {{ imovel.endereco.numero }}
+        </p>
+        <p>
+          {{ imovel.endereco.bairro }}, {{ imovel.endereco.cidade }}
+        </p>
+    </div>
+  </div>  
 </div>

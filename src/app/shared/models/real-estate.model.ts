@@ -11,7 +11,7 @@ export interface RealEstate {
   venda: boolean;
   aluguel: boolean;
   dataAnuncio: string;
-  endereco: RealEstateAdress[];
+  endereco: RealEstateAdress;
   proprietarioId: number;
 }
 
